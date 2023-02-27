@@ -1,0 +1,8 @@
+{
+    "host": "192.168.1.67",
+    "port": 5250,
+    "commands": [
+        "PLAY 2-10 AMB",
+        "PLAY 1-12 [html] https://google.com"
+    ]
+}

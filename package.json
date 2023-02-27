@@ -1,0 +1,33 @@
+{
+  "name": "casparcg-batcher",
+  "version": "0.0.1",
+  "main": "src/index.ts",
+  "repository": "https://github.com/olzzon/casparcg-batcher.git",
+  "author": "olzzon <github@olzzon.dk>",
+  "license": "MIT",
+  "dependencies": {
+    "casparcg-connection": "^6.0.1",
+    "pkg": "^5.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.14.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "build": "tsc -p ./src",
+    "start": "node --inspect -r ts-node/register src/index.ts",
+    "package": "pkg ."
+  },
+  "bin": {
+    "server": "./dist/index.js"
+  },
+  "pkg": {
+    "scripts": "./dist/index.js",
+    "targets": [
+      "node16-macos-arm64",
+      "node16-win-x64"
+    ],
+    "outputPath": "package"
+  }
+}

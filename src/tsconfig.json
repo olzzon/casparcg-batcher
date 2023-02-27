@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "outDir": "../dist",
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "ES2022",
+      "esModuleInterop": true,
+      "allowJs": true,
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "noImplicitThis": true,
+      "sourceMap": true
+    }
+}
