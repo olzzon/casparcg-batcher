@@ -9,7 +9,7 @@ interface IConfigFile {
 
 let configs: IConfigFile = {host: "127.0.0.1", port: 5250, commands: []};
 
-const configFile = process.argv[1];
+const configFile = process.argv[2];
 console.log("Using config file", configFile);
 try {
   configs = JSON.parse(fs.readFileSync(configFile, "utf8"));
