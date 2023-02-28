@@ -10,6 +10,10 @@ interface IConfigFile {
 let configFile: IConfigFile = { host: "127.0.0.1", port: 5250, commands: [] };
 
 const configFileName = process.argv[2];
+if (!configFileName) {
+    console.log("No config file specified");
+    process.exit(1);
+}
 console.log("Using config file", configFileName);
 try {
   configFile = JSON.parse(fs.readFileSync(configFileName, "utf8"));
@@ -34,6 +38,7 @@ socket
     });
     setInterval(() => {
       socket.destroy();
+      process.exit(0);
     }, 2000);
   })
   .on("close", () => {
