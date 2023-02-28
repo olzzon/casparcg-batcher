@@ -6,7 +6,6 @@
   "author": "olzzon <github@olzzon.dk>",
   "license": "MIT",
   "dependencies": {
-    "casparcg-connection": "^6.0.1",
     "pkg": "^5.8.0"
   },
   "devDependencies": {
