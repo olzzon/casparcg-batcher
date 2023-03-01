@@ -1,6 +1,9 @@
 # casparcg-batcher
 A simple batch utility to run AMCP commands from the shell or a .bat file. (e.g PLAY 1-10 file LOOP)
 
+### Download:
+You can download latest release here (just download the .exe file):
+<https://github.com/olzzon/casparcg-batcher/releases/latest>
 
 ### Run:
 #### Create a JSON file with the following structure in the same folder as the .exe file:
